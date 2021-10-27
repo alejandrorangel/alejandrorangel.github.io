@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
+title: Cats + Pizza + Robots
 email: arangel.glz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Something Something darkside.
+  The Opinions Expressed In This Blog Are My Own And Not Necessarily Those Of My Employer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rangelalejandro.com" # the base hostname & protocol for your site
 twitter_username: alexhasawebshow
