@@ -7,7 +7,7 @@ categories: blog update
 All right I kept my promise of continuing this blog, I don't think I'm gonna be able to do it on a daily
 basis but I'll try.
 
-So I have a new iPad that suspose to be really powerfull, what can I do with it? code something duh!
+So I have a new iPad that suspose to be really powerful, what can I do with it? code something duh!
 The main problem is iPadOS while the hardware is really powerful (allegedly) I think there are not enough
 tools for me to test it.
 
