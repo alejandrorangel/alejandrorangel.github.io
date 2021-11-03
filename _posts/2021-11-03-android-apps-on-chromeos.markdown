@@ -15,4 +15,5 @@ The second potential problem is that this particular model only has 4GB of ram, 
 My testing plan is to start profiling the app in the next couple of days to see if I can figure it out.
 
 I'll keep you posted on what I can find out.
+
 [hp-14-chromebook]: https://www.amazon.com/HP-Chromebook-180-degree-14-db0020nr-Chalkboard/dp/B07M8QVNKG
