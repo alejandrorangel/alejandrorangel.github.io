@@ -17,3 +17,10 @@ github_username:  alejandrorangel
 
 # Build settings
 markdown: kramdown
+
+# Exclude files from the build
+exclude:
+  - MAINTENANCE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

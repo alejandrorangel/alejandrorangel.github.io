@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Dark Mode Script - Load immediately to prevent flash -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-56MEXHDLX8"></script>
   <script>
@@ -17,5 +25,26 @@
     gtag('js', new Date());
 
     gtag('config', 'G-56MEXHDLX8');
+  </script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('dark-mode-toggle');
+      const toggleIcon = toggle.querySelector('.toggle-icon');
+      const currentTheme = localStorage.getItem('theme') || 'light';
+
+      // Set initial icon
+      toggleIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+      toggle.addEventListener('click', function() {
+        const theme = document.documentElement.getAttribute('data-theme');
+        const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        toggleIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      });
+    });
   </script>
 </head>

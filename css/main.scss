@@ -3,30 +3,41 @@
 ---
 @charset "utf-8";
 
+// Modern typography using system fonts with fallbacks
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$heading-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$code-font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Source Code Pro", monospace;
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Light mode colors
+$text-color:       #1a1a1a;
+$background-color: #ffffff;
+$brand-color:      #0066cc;
+$link-hover-color: #004499;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #666666;
+$grey-color-light: #e0e0e0;
+$grey-color-dark:  #333333;
+
+// Dark mode colors (CSS custom properties will be used)
+$dark-text-color:       #e4e4e4;
+$dark-background-color: #1a1a1a;
+$dark-brand-color:      #4d94ff;
+$dark-grey-color:       #a0a0a0;
+$dark-grey-light:       #2a2a2a;
+$dark-grey-dark:        #cccccc;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    900px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        900px;
 
 
 
@@ -51,3 +62,177 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// Dark mode support
+:root {
+  --text-color: #{$text-color};
+  --background-color: #{$background-color};
+  --brand-color: #{$brand-color};
+  --grey-color: #{$grey-color};
+  --grey-color-light: #{$grey-color-light};
+  --grey-color-dark: #{$grey-color-dark};
+  --link-hover-color: #{$link-hover-color};
+}
+
+[data-theme="dark"] {
+  --text-color: #{$dark-text-color};
+  --background-color: #{$dark-background-color};
+  --brand-color: #{$dark-brand-color};
+  --grey-color: #{$dark-grey-color};
+  --grey-color-light: #{$dark-grey-light};
+  --grey-color-dark: #{$dark-grey-dark};
+  --link-hover-color: #{$dark-brand-color};
+}
+
+// Apply dark mode to body
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--brand-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+// Dark mode toggle button
+.dark-mode-toggle {
+  background: none;
+  border: 2px solid var(--grey-color-light);
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin-left: 15px;
+
+  &:hover {
+    border-color: var(--brand-color);
+    transform: translateY(-2px);
+  }
+}
+
+// Improved mobile experience
+@media screen and (max-width: $on-palm) {
+  body {
+    font-size: 16px;
+  }
+
+  .site-title {
+    font-size: 24px !important;
+  }
+
+  .dark-mode-toggle {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+// Better code block styling
+pre, code {
+  font-family: $code-font-family;
+  border-radius: 6px;
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Social links styling
+.social-links {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  margin-left: 15px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--grey-color);
+    transition: color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      color: var(--brand-color);
+      transform: translateY(-2px);
+    }
+  }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Better headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px solid var(--grey-color-light);
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+// Better paragraphs and spacing
+p {
+  margin-bottom: 1.2em;
+}
+
+// Improved lists
+ul, ol {
+  margin-bottom: 1.5em;
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+// Better blockquotes
+blockquote {
+  border-left: 4px solid var(--brand-color);
+  padding-left: 1.5em;
+  margin: 1.5em 0;
+  color: var(--grey-color);
+  font-style: italic;
+}
+
+// Improved mobile navigation
+@media screen and (max-width: $on-palm) {
+  .site-nav {
+    .trigger {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .social-links {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+}
