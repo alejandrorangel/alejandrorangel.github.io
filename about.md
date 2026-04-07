@@ -33,7 +33,7 @@ That intersection of human-computer interaction and real-world impact still driv
 
 ## Education
 
-- **Master's degree in Computer Science** — CICESE, Ensenada, 2013–2015
+- **Graduate studies in Computer Science** — CICESE, Ensenada, 2013–2015
 - **B.Sc. in Computer Science** — Universidad Autonoma de Baja California, 2007–2011
 
 ## Beyond Work
