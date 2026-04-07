@@ -227,6 +227,22 @@ blockquote {
   font-style: italic;
 }
 
+// Simplified footer
+.footer-content {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer-description {
+  color: var(--grey-color);
+  font-size: 14px;
+  margin-bottom: 0.3em;
+}
+
+.footer-contact {
+  font-size: 14px;
+}
+
 // Post card styles
 .post-card {
   background: var(--card-bg);
