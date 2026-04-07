@@ -14,11 +14,11 @@ permalink: /about/
 
 ## At Fender
 
-I've been at Fender for over 10 years, growing from Senior Mobile/Web Developer to Technical Engineering Lead. That journey gave me hands-on experience across every layer of the stack: iOS (Swift, Objective-C), Android (Java), Node.js, AWS, and the web.
+I've been at Fender for over 10 years, growing from Senior Mobile/Web Developer to Technical Engineering Lead. That journey gave me hands-on experience across every layer of the stack: iOS (Swift, Objective-C), Android (Java, Kotlin), Node.js/TypeScript, Python, and AWS.
 
 Some of the products I've helped ship include [**Fender Play**](https://play.google.com/store/apps/details?id=com.fender.play) (the guitar learning platform), [**Fender Tune**](https://play.google.com/store/apps/details?id=com.fender.tuner), [**Fender Tone**](https://play.google.com/store/apps/details?id=com.fender.tone), and the **Tone Master Pro** digital amp modeler.
 
-These days I'm focused on AI-assisted development — building internal tooling and frameworks that harness LLMs to improve engineering velocity and code quality. I completed Stanford's Machine Learning certification in 2023 and have been deep in the generative AI space since.
+These days I'm focused on AI-assisted development — building internal tooling and frameworks that harness LLMs to improve engineering velocity and code quality. This builds on a foundation in ML — I completed Stanford's [Machine Learning course](https://coursera.org/verify/ZAMZPUQY6ZUV) taught by Andrew Ng, covering supervised and unsupervised learning, neural networks, and best practices for building ML systems. That background has been key to understanding what's actually happening under the hood of the LLMs I work with daily.
 
 ## Research & Publications
 
