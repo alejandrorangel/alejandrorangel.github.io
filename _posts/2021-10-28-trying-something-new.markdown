@@ -3,6 +3,7 @@ layout: post
 title:  "Trying Something New"
 date:   2021-10-28 12:47:00
 categories: blog update
+description: "Exploring Swift Playgrounds on iPad as a coding tool — learning SwiftUI and testing the limits of iPadOS for development."
 ---
 All right I kept my promise of continuing this blog, I don't think I'm gonna be able to do it on a daily
 basis but I'll try.

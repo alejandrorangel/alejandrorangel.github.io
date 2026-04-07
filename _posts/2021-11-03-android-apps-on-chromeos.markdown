@@ -3,6 +3,7 @@ layout: post
 title:  "Android Apps on ChromeOS"
 date:   2021-11-03 12:01:00
 categories: blog entry
+description: "Profiling an Android app on ChromeOS — debugging performance bottlenecks on an HP Chromebook with an x86 CPU and 4GB of RAM."
 ---
 I haven't blogged in a couple of days; why? Mainly because I'm a little bit lazy but also because something exciting
 caught my attention. I try to run one of our apps inside ChromeOS; that's not something new since I did the same a couple of years ago.

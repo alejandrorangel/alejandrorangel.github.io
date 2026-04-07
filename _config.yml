@@ -8,8 +8,7 @@
 # Site settings
 title: Cats + Pizza ^ Coffe + Robots
 email: arangel.glz@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  The Opinions Expressed In This Blog Are My Own And Not Necessarily Those Of My Employer.
+description: "Opinions expressed here are my own, not my employer's."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alejandrorangel.github.io" # the base hostname & protocol for your site
 twitter_username: arangel_glz
@@ -17,6 +16,19 @@ github_username:  alejandrorangel
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO defaults
+lang: en
+author: Alejandro Rangel
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-default.jpg
 
 # Exclude files from the build
 exclude:

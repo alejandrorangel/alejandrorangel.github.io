@@ -3,6 +3,7 @@ layout: post
 title:  "Harnessing AI with Spec-Driven Development"
 date:   2026-04-06 12:00:00
 categories: blog ai development
+description: "How I built a spec-driven framework to harness AI coding assistants — steering docs, structured workflows, and the context engineering patterns that made the biggest difference."
 mermaid: true
 ---
 

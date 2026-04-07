@@ -72,6 +72,9 @@ $on-laptop:        900px;
   --grey-color-light: #{$grey-color-light};
   --grey-color-dark: #{$grey-color-dark};
   --link-hover-color: #{$link-hover-color};
+  --code-bg: #f4f4f8;
+  --card-bg: #ffffff;
+  --card-border: #e8e8e8;
 }
 
 [data-theme="dark"] {
@@ -79,9 +82,12 @@ $on-laptop:        900px;
   --background-color: #{$dark-background-color};
   --brand-color: #{$dark-brand-color};
   --grey-color: #{$dark-grey-color};
-  --grey-color-light: #{$dark-grey-light};
+  --grey-color-light: #3a3a3a;
   --grey-color-dark: #{$dark-grey-dark};
-  --link-hover-color: #{$dark-brand-color};
+  --link-hover-color: #7ab3ff;
+  --code-bg: #2a2a2e;
+  --card-bg: #242424;
+  --card-border: #3a3a3a;
 }
 
 // Apply dark mode to body
@@ -149,13 +155,17 @@ html {
   display: inline-flex;
   gap: 12px;
   align-items: center;
+  vertical-align: middle;
   margin-left: 15px;
+  line-height: 1;
 
   a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     color: var(--grey-color);
     transition: color 0.3s ease, transform 0.2s ease;
+    line-height: 1;
 
     &:hover {
       color: var(--brand-color);
@@ -166,6 +176,7 @@ html {
   .social-icon {
     width: 20px;
     height: 20px;
+    display: block;
   }
 }
 
@@ -214,6 +225,56 @@ blockquote {
   margin: 1.5em 0;
   color: var(--grey-color);
   font-style: italic;
+}
+
+// Post card styles
+.post-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.post-card-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:visited {
+    color: var(--text-color);
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .post-meta {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.post-card-title {
+  font-size: 1.4em;
+  margin: 0.3em 0 0.4em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.post-card-excerpt {
+  color: var(--grey-color);
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 // Improved mobile navigation
