@@ -47,4 +47,12 @@
       });
     });
   </script>
+
+  {% if page.mermaid %}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    mermaid.initialize({ startOnLoad: true, theme: isDark ? 'dark' : 'neutral' });
+  </script>
+  {% endif %}
 </head>
