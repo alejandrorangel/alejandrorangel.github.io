@@ -75,6 +75,7 @@ $on-laptop:        900px;
   --code-bg: #f4f4f8;
   --card-bg: #ffffff;
   --card-border: #e8e8e8;
+  --field-line: rgba(52, 152, 219, 0.07);
 }
 
 [data-theme="dark"] {
@@ -88,13 +89,51 @@ $on-laptop:        900px;
   --code-bg: #2a2a2e;
   --card-bg: #242424;
   --card-border: #3a3a3a;
+  --field-line: rgba(77, 148, 255, 0.09);
 }
 
-// Apply dark mode to body
+// Apply dark mode to body with subtle cross-hatch background
 body {
   color: var(--text-color);
   background-color: var(--background-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-image:
+    repeating-linear-gradient(
+      165deg,
+      transparent,
+      transparent 20px,
+      var(--field-line) 20px,
+      var(--field-line) 21px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 30px,
+      var(--field-line) 30px,
+      var(--field-line) 31px
+    ),
+    repeating-linear-gradient(
+      150deg,
+      transparent,
+      transparent 25px,
+      var(--field-line) 25px,
+      var(--field-line) 26px
+    ),
+    repeating-linear-gradient(
+      172deg,
+      transparent,
+      transparent 35px,
+      var(--field-line) 35px,
+      var(--field-line) 36px
+    ),
+    repeating-linear-gradient(
+      142deg,
+      transparent,
+      transparent 18px,
+      var(--field-line) 18px,
+      var(--field-line) 19px
+    );
+  background-attachment: fixed;
 }
 
 a {
