@@ -9,7 +9,7 @@ permalink: /about/
     <h2 style="margin-top: 0;">Hello!</h2>
     <p>I'm Alejandro Rangel, a <strong>Technical Engineering Lead</strong> at <strong>Fender Musical Instruments Corporation</strong> in Los Angeles. I've been writing code since I was 10, and over the past 15+ years I've worked across mobile, web, cloud, and AI — from university research labs to products used by millions of musicians.</p>
   </div>
-  <img src="/assets/245719453.jpeg" alt="Alejandro Rangel" style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; flex-shrink: 0;" />
+  <img src="/assets/avatar.png" alt="Alejandro Rangel" style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; flex-shrink: 0;" />
 </div>
 
 ## At Fender
