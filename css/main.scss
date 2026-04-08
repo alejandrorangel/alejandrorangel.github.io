@@ -227,6 +227,39 @@ blockquote {
   font-style: italic;
 }
 
+// Reading list tags
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.tag-ai {
+  background: var(--brand-color);
+  color: #fff;
+}
+
+.tag-engineering {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.tag-leadership {
+  background: #f39c12;
+  color: #fff;
+}
+
+.tag-design {
+  background: #5dade2;
+  color: #fff;
+}
+
 // Simplified footer
 .footer-content {
   text-align: center;
